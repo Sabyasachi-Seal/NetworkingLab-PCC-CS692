@@ -16,7 +16,7 @@ void bin(int x,mq* msg){
 	cnt-=1;
 	while(cnt>=0){
 		msg->mtext[cnt]=(x&1)+'0';
-        x=x>>1;
+        	x=x>>1;
 		cnt-=1;
 	}
 }
@@ -42,7 +42,7 @@ void hex(int x,mq* msg){
     		msg->mtext[cnt]=temp+'0';
     	else
     	    msg->mtext[cnt]=temp+55;
-        x=x/16;
+        	x=x/16;
 		cnt-=1;
 	}
 }
